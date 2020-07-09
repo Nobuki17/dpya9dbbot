@@ -57,7 +57,7 @@ async def キャリア(ctx):
 @bot.command(aliases=["bgm"])
 async def BGM(ctx):
     embed = discord.Embed(title="アスファルト9のBGM", description="\n(実行は全て`a9:bgm1`というように行ってください。)",color=0xce0042)
-    embed.add_field(name="メニューBGM:", value="1. Black Wave - K.Flay\n2. Bottom Of The Deep Blue Sea - MISSIO",inline=False)
+    embed.add_field(name="メニューBGM:", value="1. Black Wave - K.Flay\n2. Bottom Of The Deep Blue Sea - MISSIO\n3. Higher - Lemaitre feat. Maty Noyes",inline=False)
     embed.add_field(name="レースBGM:", value="データがありません",inline=False)
     await ctx.send(embed=embed)
 
@@ -107,10 +107,10 @@ async def トレードコイン(ctx):
 async def マシン(ctx):
     embed = discord.Embed(title="アスファルト9のマシン", description="アスファルト9のマシンについて、様々な情報を知ることができます。\n(実行は全て`a9:マシン名`というように行ってください。)\n※現在開発中の為、マシンの情報がかなり少ないですが、ご了承ください。",color=0xce0042)
     embed.add_field(name="**Dクラス**:", value="Lancer Evolution\nZ4 LCI E89\nCamaro LT\nNismo Leaf RC(データ無し)\n370Z Nismo(データ無し)",inline=False)
-    embed.add_field(name="**Cクラス**:", value="Challenger SRT8",inline=False)
-    embed.add_field(name="**Bクラス**:", value="Asterion",inline=False)
-    embed.add_field(name="**Aクラス**:", value="Vulcan",inline=False)
-    embed.add_field(name="**Sクラス**:", value="Jesko",inline=False)
+    embed.add_field(name="**Cクラス**:", value="Challenger SRT8(データ無し)",inline=False)
+    embed.add_field(name="**Bクラス**:", value="Asterion(データ無し)",inline=False)
+    embed.add_field(name="**Aクラス**:", value="Vulcan(データ無し)",inline=False)
+    embed.add_field(name="**Sクラス**:", value="Jesko(データ無し)",inline=False)
     embed.set_footer(text="ヒント: コピー&ペーストでマシン名の入力を省略できます。\n(全て小文字でも実行できます。)")
     await ctx.send(embed=embed)
 
@@ -142,7 +142,7 @@ async def on_message(message):
 
     if bot.user in message.mentions:
         print(f"{message.author.name}にメンションされました")
-        await message.channel.send(f"{message.author.mention} \n`a9:help` でヘルプを表示します。")
+        await message.channel.send(f"{message.author.mention} ヘルプが必要ですか？\n`a9:help` でヘルプを表示します。")
 
     elif message.content in ["a9:Lancer Evolution","a9:lancer evolution"]:
         embed = discord.Embed(title="マシンの情報",description="Mitsubishi Lancer Evolution",color=0x065ec9)
