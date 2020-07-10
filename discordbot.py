@@ -146,6 +146,8 @@ async def on_message(message):
 
     elif message.content in ["a9:Lancer Evolution","a9:lancer evolution"]:
         embed = discord.Embed(title="マシンの情報",description="Mitsubishi Lancer Evolution",color=0x065ec9)
+        embed.add_field(name="マシンクラス:", value="Dクラス")
+        embed.add_field(name="レア度:", value="アンコモン")
         embed.add_field(name="給油時間:", value="05m00s(<:switch:726284432234774600>02m00s)")
         embed.add_field(name="初期状態:", value="マシンランク:467\n最高速度:250.0\n加速:42.40\nハンドリング:46.30\nニトロ:54.80",inline=False)
         embed.add_field(name="☆1 MAX:", value="マシンランク:791\n最高速度:257.2\n加速:46.89\nハンドリング:48.96\nニトロ:59.59")
@@ -157,6 +159,8 @@ async def on_message(message):
 
     elif message.content in ["a9:Z4 LCI E89","a9:z4 lci e89"]:
         embed = discord.Embed(title="マシンの情報",description="BMW Z4 LCI E89",color=0xbe2e3d)
+        embed.add_field(name="マシンクラス:", value="Dクラス")
+        embed.add_field(name="レア度:", value="アンコモン")
         embed.add_field(name="給油時間:", value="05m00s(<:switch:726284432234774600>02m00s)")
         embed.add_field(name="初期状態:", value="マシンランク:518\n最高速度:250.0\n加速:58.60\nハンドリング:39.02\nニトロ:45.09",inline=False)
         embed.add_field(name="☆1 MAX:", value="マシンランク:859\n最高速度:256.0\n加速:62.24\nハンドリング:42.00\nニトロ:49.49")
@@ -168,6 +172,8 @@ async def on_message(message):
 
     elif message.content in ["a9:Camaro LT","a9:camaro lt"]:
         embed = discord.Embed(title="マシンの情報",description="Chevrolet Camaro LT",color=0xd0bf25)
+        embed.add_field(name="マシンクラス:", value="Dクラス")
+        embed.add_field(name="レア度:", value="アンコモン")
         embed.add_field(name="給油時間:", value="05m00s(<:switch:726284432234774600>02m00s)")
         embed.add_field(name="初期状態:", value="マシンランク:556\n最高速度:265.0\n加速:51.40\nハンドリング:41.17\nニトロ:48.53",inline=False)
         embed.add_field(name="☆1 MAX:", value="マシンランク:910\n最高速度:271.8\n加速:56.19\nハンドリング:43.75\nニトロ:53.78")
