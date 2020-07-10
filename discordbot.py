@@ -184,10 +184,13 @@ async def on_message(message):
         
     elif message.content in ["a9:Challenger SRT8","a9:Challenger Srt8","a9:challenger srt8"]:
         embed = discord.Embed(title="マシンの情報", description="Dodge Challenger SRT8",color=0xe65420)
-        embed.add_field(name=" 初期状態:", value="マシンランク:799\n最高速度:292.0\n加速:64.00\nハンドリング:26.47\nニトロ:23.08")
-        embed.add_field(name=" ☆1 MAX:", value="マシンランク:1,077\n最高速度:297.5\n加速:66.40\nハンドリング:29.96\nニトロ:30.34")
-        embed.add_field(name=" ☆2 MAX:", value="マシンランク:1,425\n最高速度:No Data\n加速:No Data\nハンドリング:No Data\nニトロ:No Data")
-        embed.add_field(name=" ☆3 MAX:", value="マシンランク:1,687\n最高速度:308.6\n加速:71.92\nハンドリング:37.98\nニトロ:45.41")
+        embed.add_field(name="マシンクラス:", value="Cクラス")
+        embed.add_field(name="レア度:", value="アンコモン")
+        embed.add_field(name="給油時間:", value="05m00s(<:switch:726284432234774600>02m00s)")
+        embed.add_field(name="初期状態:", value="マシンランク:799\n最高速度:292.0\n加速:64.00\nハンドリング:26.47\nニトロ:23.08",inline=False)
+        embed.add_field(name="☆1 MAX:", value="マシンランク:1,077\n最高速度:297.5\n加速:66.40\nハンドリング:29.96\nニトロ:30.34")
+        embed.add_field(name="☆2 MAX:", value="マシンランク:1,425\n最高速度:No Data\n加速:No Data\nハンドリング:No Data\nニトロ:No Data")
+        embed.add_field(name="☆3 MAX:", value="マシンランク:1,687\n最高速度:308.6\n加速:71.92\nハンドリング:37.98\nニトロ:45.41")
         embed.set_footer(text="最終更新:2020 07/10")
         await message.channel.send(embed=embed)
 
