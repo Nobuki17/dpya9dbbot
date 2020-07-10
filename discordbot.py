@@ -182,7 +182,7 @@ async def on_message(message):
         embed.set_footer(text="最終更新:2020 07/05")
         await message.channel.send(embed=embed)
         
-    elif message.content in ["a9:Challenger SRT8","a9:Challenger Srt8","a9:challenger srt8]:
+    elif message.content in ["a9:Challenger SRT8","a9:Challenger Srt8","a9:challenger srt8"]:
         embed = discord.Embed(title="マシンの情報", description="Dodge Challenger SRT8",color=0xe65420)
         embed.add_field(name=" 初期状態:", value="マシンランク:799\n最高速度:292.0\n加速:64.00\nハンドリング:26.47\nニトロ:23.08")
         embed.add_field(name=" ☆1 MAX:", value="マシンランク:1,077\n最高速度:297.5\n加速:66.40\nハンドリング:29.96\nニトロ:30.34")
