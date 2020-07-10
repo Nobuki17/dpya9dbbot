@@ -158,8 +158,8 @@ async def on_message(message):
     elif message.content in ["a9:Z4 LCI E89","a9:z4 lci e89"]:
         embed = discord.Embed(title="マシンの情報",description="BMW Z4 LCI E89",color=0xbe2e3d)
         embed.add_field(name="給油時間:", value="05m00s(<:switch:726284432234774600>02m00s)")
-        embed.add_field(name="初期状態:", value="マシンランク:518\n最高速度:250.0\n加速:58.60\nハンドリング:39.02\nニトロ:45.09")
-        embed.add_field(name="☆1 MAX:", value="マシンランク:859\n最高速度:256.0\n加速:62.24\nハンドリング:42.00\nニトロ:49.49",inline=False)
+        embed.add_field(name="初期状態:", value="マシンランク:518\n最高速度:250.0\n加速:58.60\nハンドリング:39.02\nニトロ:45.09",inline=False)
+        embed.add_field(name="☆1 MAX:", value="マシンランク:859\n最高速度:256.0\n加速:62.24\nハンドリング:42.00\nニトロ:49.49")
         embed.add_field(name="☆2 MAX:", value="マシンランク:1,172\n最高速度:261.5\n加速:65.64\nハンドリング:44.79\nニトロ:53.91")
         embed.add_field(name="☆3 MAX:", value="マシンランク:1,476\n最高速度:266.8\n加速:68.86\nハンドリング:47.43\nニトロ:57.49")
         embed.set_image(url="https://cdn.discordapp.com/attachments/719041194872799264/720573470500716605/BMW_Z4_LCI_E89.png")
@@ -169,7 +169,7 @@ async def on_message(message):
     elif message.content in ["a9:Camaro LT","a9:camaro lt"]:
         embed = discord.Embed(title="マシンの情報",description="Chevrolet Camaro LT",color=0xd0bf25)
         embed.add_field(name="給油時間:", value="05m00s(<:switch:726284432234774600>02m00s)")
-        embed.add_field(name="初期状態:", value="マシンランク:556\n最高速度:265.0\n加速:51.40\nハンドリング:41.17\nニトロ:48.53")
+        embed.add_field(name="初期状態:", value="マシンランク:556\n最高速度:265.0\n加速:51.40\nハンドリング:41.17\nニトロ:48.53",inline=False)
         embed.add_field(name="☆1 MAX:", value="マシンランク:910\n最高速度:271.8\n加速:56.19\nハンドリング:43.75\nニトロ:53.78")
         embed.add_field(name="☆2 MAX:", value="マシンランク:1,232\n最高速度:278.9\n加速:60.63\nハンドリング:46.13\nニトロ:58.68")
         embed.add_field(name="☆3 MAX:", value="マシンランク:1,546\n最高速度:284.1\n加速:64.81\nハンドリング:48.39\nニトロ:63.29")
