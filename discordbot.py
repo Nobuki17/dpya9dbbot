@@ -8,7 +8,7 @@ import traceback
 
 bot = commands.Bot(command_prefix="a9:", help_command=None)
 token = os.environ['DISCORD_BOT_TOKEN']
-espotify = <:spotify:730688808252604457>
+espotify = "<:spotify:730688808252604457>"
 
 
 @bot.event
