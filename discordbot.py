@@ -8,6 +8,7 @@ import traceback
 
 bot = commands.Bot(command_prefix="a9:", help_command=None)
 token = os.environ['DISCORD_BOT_TOKEN']
+espotify = <:spotify:730688808252604457>
 
 
 @bot.event
@@ -64,7 +65,7 @@ async def BGM(ctx):
 @bot.command(aliases=["bgm1"])
 async def BGM1(ctx):
     embed = discord.Embed(title="曲の情報", description="タイトル: Black Wave\nアーティスト: K.Flay",color=0xce0042)
-    embed.add_field(name="聴く", value="<:spotify:730688808252604457>[Spotifyで再生](https://open.spotify.com/track/6B69v0kDUWJqWz1W3lNrz2?si=_aLo6QD8SlC1TbeSr9Ku4w)\n<:youtube:730692649543008406>[YouTubeで再生](https://youtu.be/kmKyh5_X4Hk)",inline=False)
+    embed.add_field(name="聴く", value="espotify[Spotifyで再生](https://open.spotify.com/track/6B69v0kDUWJqWz1W3lNrz2?si=_aLo6QD8SlC1TbeSr9Ku4w)\n<:youtube:730692649543008406>[YouTubeで再生](https://youtu.be/kmKyh5_X4Hk)",inline=False)
     embed.set_thumbnail(url="https://images-na.ssl-images-amazon.com/images/I/710Mgh-CRfL._AC_SL1200_.jpg")
     await ctx.send(embed=embed)
 
