@@ -211,7 +211,7 @@ async def on_message(message):
         embed = discord.Embed(title="マシンの情報", description="Koenigsegg Jesko",color=0xdddfdc)
         embed.add_field(name="マシンクラス:", value="Sクラス")
         embed.add_field(name="レア度:", value="エピック")
-        embed.add_field(name="給油時間:", value="6h00m(<:switch:726284432234774600>1h12m)")
+        embed.add_field(name="給油時間:", value="6h00m(<:switch:726284432234774600>1h12m?)")
         embed.add_field(name=" 初期状態:", value="マシンランク:3,637\n最高速度:484.0\n加速:74.80\nハンドリング:41.93\nニトロ:42.56")
         embed.add_field(name=" ☆1 MAX:", value="マシンランク:3,793\n最高速度:485.7\n加速:75.50\nハンドリング:42.75\nニトロ:44.59")
         embed.add_field(name=" ☆2 MAX:", value="マシンランク:3,975\n最高速度:487.7\n加速:76.32\nハンドリング:43.71\nニトロ:46.99")
@@ -220,7 +220,7 @@ async def on_message(message):
         embed.add_field(name=" ☆5 MAX:", value="マシンランク:4,608\n最高速度:494.0\n加速:79.21\nハンドリング:47.16\nニトロ:54.96")
         embed.add_field(name=" ☆6 MAX:", value="マシンランク:4,826\n最高速度:496.6\n加速:80.07\nハンドリング:48.19\nニトロ:58.23")
         embed.set_image(url="https://media.discordapp.net/attachments/719041194872799264/720559620178837524/Koenigsegg_Jesko.png?width=895&height=503")
-        embed.set_footer(text="最終更新:2020 06/12")
+        embed.set_footer(text="最終更新:2020 07/15")
         await message.channel.send(embed=embed)
 
     await bot.process_commands(message)
