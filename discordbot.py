@@ -182,6 +182,18 @@ async def on_message(message):
         embed.set_footer(text="最終更新:2020 07/05")
         await message.channel.send(embed=embed)
         
+    elif message.content in ["a9:Nismo Leaf RC","a9:nismo leaf rc"]:
+        embed = discord.Embed(title="マシンの情報",description="Nissan Nismo Leaf RC",color=0xc9cdc9)
+        embed.add_field(name="マシンクラス:", value="Dクラス")
+        embed.add_field(name="レア度:", value="アンコモン")
+        embed.add_field(name="給油時間:", value="No Data(<:switch:726284432234774600>No Data)")
+        embed.add_field(name=" 初期状態:", value="マシンランク:No Data\n最高速度:No Data\n加速:No Data\nハンドリング:No Data\nニトロ:No Data")
+        embed.add_field(name=" ☆1 MAX:", value="マシンランク:No Data\n最高速度:No Data\n加速:No Data\nハンドリング:No Data\nニトロ:No Data")
+        embed.add_field(name=" ☆2 MAX:", value="マシンランク:No Data\n最高速度:No Data\n加速:No Data\nハンドリング:No Data\nニトロ:No Data")
+        embed.add_field(name=" ☆3 MAX:", value="マシンランク:No Data\n最高速度:No Data\n加速:No Data\nハンドリング:No Data\nニトロ:No Data")
+        embed.set_footer(text="最終更新:2020 06/14")
+        await message.channel.send(embed=embed)
+        
     elif message.content in ["a9:Challenger SRT8","a9:Challenger Srt8","a9:challenger srt8"]:
         embed = discord.Embed(title="マシンの情報", description="Dodge Challenger SRT8",color=0xe65420)
         embed.add_field(name="マシンクラス:", value="Cクラス")
