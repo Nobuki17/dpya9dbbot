@@ -6,7 +6,7 @@ import asyncio
 import os
 import traceback
 
-bot = commands.Bot(command_prefix="a9:", help_command=None)
+bot = commands.Bot(command_prefix=["a9:","A9:","9:"], help_command=None)
 token = os.environ['DISCORD_BOT_TOKEN']
 
 
