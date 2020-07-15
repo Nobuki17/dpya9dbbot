@@ -29,7 +29,7 @@ async def embox(title,description,color,message):
 
 @bot.command()
 async def help(ctx):
-    embed = discord.Embed(title="ヘルプ", description="botを使用していただきありがとうございます！\n注:このbotは非公式です。\n　 アスファルト9公式のbotではありません。",color=0xce0042)
+    embed = discord.Embed(title="ヘルプ", description="このbotのプレフィックスは`a9:`、`A9:`、`9:`の3つです。\nどれでも利用することができます。\n注:このbotは非公式です。\n　 アスファルト9公式のbotではありません。",color=0xce0042)
     embed.add_field(name="help", value="このコマンドです。",inline=False)
     embed.add_field(name="database", value="データの種類や、説明を表示します。",inline=False)
     embed.add_field(name="about", value="botについてや、botの招待リンクを確認できます。",inline=False)
