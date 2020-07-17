@@ -130,7 +130,7 @@ async def gameabout(ctx):
     embed = discord.Embed(title="ゲームの情報", description="アスファルト 9: Legends",color=0xce0042)
     embed.add_field(name="製作会社", value="GameLoft",inline=True)
     embed.add_field(name="プラットフォーム", value="iOS / Mac\n <:android:733606301791420447>Android\n <:windows:640202333682401287>Windows\n <:switch:726284432234774600>Nintendo Switch",inline=False)
-    embed.add_field(name="ゲームバージョン",value="Ver.-.-.-(<:switch:726284432234774600>Ver.1.7.7a)",inline=True)
+    embed.add_field(name="ゲームバージョン",value="Ver.2.3.4(<:switch:726284432234774600>Ver.1.7.7a)",inline=True)
     embed.add_field(name="公式サーバー", value="https://discord.gg/asphalt9",inline=False)
     await ctx.send(embed=embed)
 
