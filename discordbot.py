@@ -132,6 +132,7 @@ async def gameabout(ctx):
     embed.add_field(name="プラットフォーム", value="iOS / Mac\n <:android:733606301791420447>Android\n <:windows:640202333682401287>Windows\n <:switch:726284432234774600>Nintendo Switch",inline=False)
     embed.add_field(name="ゲームバージョン",value="Ver.2.3.4(<:switch:726284432234774600>Ver.1.7.7a)",inline=True)
     embed.add_field(name="公式サーバー", value="https://discord.gg/asphalt9",inline=False)
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/719041194872799264/733619242720821338/2020-07-17_18.31.33.png")
     await ctx.send(embed=embed)
 
 @bot.command()
