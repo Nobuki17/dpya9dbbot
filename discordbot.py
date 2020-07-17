@@ -12,8 +12,9 @@ token = os.environ['DISCORD_BOT_TOKEN']
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Game("Asphalt 9: Legends - 2019's Action Car Racing Game"))
+    await bot.change_presence(activity=discord.Game("アスファルト 9: Legends"))
     #await bot.change_presence(activity=discord.Game(f"ヘルプは a9:help | 導入サーバー数: {len(bot.guilds)}"))
+    #Asphalt 9: Legends - 2019's Action Car Racing Game
     
     #status=discord.Status.idle で退席状態に
 
@@ -130,7 +131,7 @@ async def gameabout(ctx):
     embed.add_field(name="製作会社", value="GameLoft",inline=True)
     embed.add_field(name="プラットフォーム", value="iOS / Mac\n <:android:733606301791420447>Android\n <:windows:640202333682401287>Windows\n <:switch:726284432234774600>Nintendo Switch",inline=False)
     embed.add_field(name="ゲームバージョン",value="Ver.-.-.-(<:switch:726284432234774600>Ver.1.7.7a)",inline=True)
-    embed.add_field(name="公式サーバー", value="https://discord.gg/asphalt9",inline=True)
+    embed.add_field(name="公式サーバー", value="https://discord.gg/asphalt9",inline=False)
     await ctx.send(embed=embed)
 
 @bot.command()
