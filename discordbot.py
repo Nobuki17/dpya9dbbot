@@ -12,7 +12,8 @@ token = os.environ['DISCORD_BOT_TOKEN']
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Game(f"ヘルプは a9:help | 導入サーバー数: {len(bot.guilds)}"))
+    await bot.change_presence(activity=discord.Game("Asphalt 9: Legends - 2019's Action Car Racing Game"))
+    #await bot.change_presence(activity=discord.Game(f"ヘルプは a9:help | 導入サーバー数: {len(bot.guilds)}"))
     
     #status=discord.Status.idle で退席状態に
 
@@ -121,6 +122,15 @@ async def about(ctx):
     embed.add_field(name="バージョン", value="Ver.0.6.3b\nコマンドフレームワーク移行版",inline=False)
     embed.add_field(name="招待リンク",value="開発中のため、現在非公開です。\n一般公開までお待ちください。",inline=True)
     embed.add_field(name="提携", value="辞書 bot#2369 と提携しています。\n導入はこちら。https://discordapp.com/api/oauth2/authorize?client_id=702390058896064512&permissions=8&scope=bot",inline=True)
+    await ctx.send(embed=embed)
+    
+@bot.command()
+async def gameabout(ctx):
+    embed = discord.Embed(title="アスファルト 9: Legends", description="ゲームの情報",color=0xce0042)
+    embed.add_field(name="製作会社", value="GameLoft",inline=True)
+    embed.add_field(name="プラットフォーム", value="iOS / Mac\nAndroid\n<:windows:640202333682401287>Windows\n<:switch:726284432234774600>Nintendo Switch",inline=False)
+    embed.add_field(name="ゲームバージョン",value="Ver.-.-.-(<:switch:726284432234774600>Ver.1.7.7a)",inline=True)
+    embed.add_field(name="公式サーバー", value="https://discord.gg/asphalt9",inline=True)
     await ctx.send(embed=embed)
 
 @bot.command()
