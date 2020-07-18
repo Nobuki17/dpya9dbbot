@@ -121,6 +121,7 @@ async def about(ctx):
     embed = discord.Embed(title="このbotについて...", description="アスファルト 9：Database",color=0xce0042)
     embed.add_field(name="製作者", value="うぇあChannel#6928",inline=True)
     embed.add_field(name="バージョン", value="Ver.0.6.3b\nコマンドフレームワーク移行版",inline=False)
+    embed.add_field(name="導入サーバー数", value=str(len(bot.guilds)))
     embed.add_field(name="招待リンク",value="開発中のため、現在非公開です。\n一般公開までお待ちください。",inline=True)
     embed.add_field(name="提携", value="辞書 bot#2369 と提携しています。\n導入はこちら。https://discordapp.com/api/oauth2/authorize?client_id=702390058896064512&permissions=8&scope=bot",inline=True)
     await ctx.send(embed=embed)
