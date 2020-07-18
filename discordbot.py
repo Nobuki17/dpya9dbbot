@@ -16,7 +16,7 @@ async def on_ready():
     #await bot.change_presence(activity=discord.Game(f"ヘルプは a9:help | 導入サーバー数: {len(bot.guilds)}"))
     #Asphalt 9: Legends - 2019's Action Car Racing Game
     
-    #status=discord.Status.idle で退席状態に
+    #status=discord.Status.idle で退席状態に!
 
 async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
